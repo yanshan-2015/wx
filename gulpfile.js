@@ -17,12 +17,12 @@ gulp.task('sass', function() {
         .pipe(watch('./sass/*.scss'))
         .pipe(sass())
         .pipe(gulp.dest('./css'))
-        .pipe(minifycss())
+        /*.pipe(minifycss())
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./css/min'))
-})
+        .pipe(gulp.dest('./css/min'))*/
+});
 
 //压缩合并JS文件
 gulp.task('js', function() {
@@ -33,7 +33,7 @@ gulp.task('js', function() {
     //     suffix: '.min'
     // })) //rename压缩后的文件名
         .pipe(gulp.dest('./script/min'))
-})
+});
 
 gulp.task('browser-sync', function() {
     var files = [
@@ -48,7 +48,7 @@ gulp.task('browser-sync', function() {
             baseDir: './'
         }
     })
-})
+});
 
 
 

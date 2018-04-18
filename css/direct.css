@@ -1,0 +1,26 @@
+.direct {
+  background: url("../images/03-bg.png"); }
+
+.logo {
+  width: 100%;
+  overflow: hidden;
+  padding: 0.56rem 0 0.267rem; }
+  .logo .logoBox {
+    text-align: center; }
+    .logo .logoBox img {
+      width: 6.26rem;
+      height: auto; }
+
+.title {
+  text-align: center; }
+  .title img {
+    width: 0.64rem;
+    height: 0.64rem; }
+  .title h1 {
+    font-size: 0.383rem;
+    color: #f8b047; }
+
+.del {
+  width: 60px;
+  height: 40px;
+  background-color: #555555; }

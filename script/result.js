@@ -28,7 +28,7 @@ $(function() {
   //   })
   $('.next').click(function() {
     location.href = 'response.html?phone=' + phone + '&jingdu=' + jingdu + '&weidu=' + weidu + '&status=' + status + '&barCode=' + barCode + '&name=' + encodeURI(encodeURI(name));
-  })
+  });
 
   //根据扫描的防伪码进行正品验证。
   $.ajax({
@@ -66,7 +66,7 @@ $(function() {
       alert('error');
     }
   })
-})
+});
 
 function setData(data) {
   if (data.checked_num == 1) {
