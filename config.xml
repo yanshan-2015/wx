@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget id="A6926055066256" version="0.0.1"> 
+  <name>招商APP</name>  
+  <description/>  
+  <author email="184027749@qq.com" href="http://www.apicloud.com">guangzai</author>  
+  <content src="index.html"/>  
+  <preference name="appBackground" value="rgba(0,0,0,0)"/>  
+  <preference name="windowBackground" value="rgba(0,0,0,0)"/>  
+  <preference name="frameBackgroundColor" value="rgba(0,0,0,0)"/>  
+  <preference name="autoLaunch" value="true"/>  
+  <preference name="autoUpdate" value="true"/>  
+  <preference name="smartUpdate" value="false"/>  
+  <preference name="debug" value="true"/>  
+  <preference name="statusBarAppearance" value="true"/>  
+  <preference name="pageBounce" value="false"/>  
+  <permission name="location"/>  
+  <permission name="internet"/>  
+  <access origin="*"/>  
+  <feature name="aMap"> 
+    <param name="android_api_key" value="f7Is0dWLom2q6rV3ZfFPZ1aa"/>  
+    <param name="ios_api_key" value="81qz3dBYB5q2nGji4IYrawr1"/> 
+  </feature>  
+  <feature name="maketionCardReader"> 
+    <param name="apiKey" value=" AD1B0E942E0D7240CCFD355A28476E7E"/>  
+    <param name="apiSecret" value="b2235093fac07c7bb4fdace94ca97007cd336ba8fccbcdf3e8e575e60e28d23e5fb3d972a203fd7e4553380a1233f6ff96e034650228c557cf6313de7c3ee9f7"/> 
+  </feature>  
+  <feature name="hanvonCloudBcardReader "> 
+    <param name="androidkey" value="163114c8-31b5-4424-bb85-617f81cf54d9"/> 
+  </feature> 
+</widget>

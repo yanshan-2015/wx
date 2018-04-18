@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>慕思正品查询平台</title>
+    <script src="../script/lib/properScreen.js"></script>
+    <script src="../script/lib/properScreen_css.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body class="resultBody">
+    <div class="result">
+        <!-- 加载动画 -->
+        <div class="loaderBox"><div class="loader">Load</div></div>
+        <div class="logoBox">
+            <img src="../images/01-logo.png"/>
+        </div>
+
+        <div class="errmsg msg">
+            <img src="../images/04-fault.png"/>
+            <p><strong>暂时无法查询</strong>到此商品</p>
+            <p>请联系<a phone="400-777-0077">400-777-0077</a>慕思客服进行查询</p>
+        </div>
+
+        <div class="truemsg msg">
+            <img src="../images/03-true.png"/>
+            <p>您所查询的商品是<strong class="checkIndex"></strong> 次验证</p>
+            <p class="personMsg">首次验证为<strong class="address"></strong><strong>,</strong><strong class="name"></strong></p>
+            <p>您所购买的商品是慕思公司的<strong>正品</strong>，请放心使用</p>
+            <ul class="msgBox">
+                <h5>详细信息</h5>
+                <li><strong>产品代号</strong><span class="fgoodsCode"></span></li>
+                <li><strong>产品名称</strong><span class="fgoodsName"></span></li>
+                <li><strong>产品规格</strong><span class="fsizeDesc"></span></li>
+                <li><strong>出货单号</strong><span class="">DFHBX55217Q</span></li>
+                <li><strong class="letter0">生产制令号</strong><span class="">HVLAW2148503321_215</span></li>
+                <li><strong>生产部门</strong><span class="">生产一部</span></li>
+                <li><strong class="letter0">出货扫描人</strong><span class="">12507</span></li>
+            </ul>
+            <button class="next">下一步</button>
+        </div>
+        <p class="copyright"><img src="../images/03-phone.png"/>客服电话：400-777-0077</p>
+    </div>
+
+    <script src="../script/lib/zepto.js"></script>
+    <script src="../script/lib/wx.js"></script>
+    <script src="../script/lib/common.js"></script>
+    <script src="../script/result.js"></script>
+</body>
+</html>

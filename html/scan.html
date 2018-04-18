@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>消费者客服系统</title>
+    <script src="../script/lib/properScreen.js"></script>
+    <script src="../script/lib/properScreen_css.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body class="indexBody">
+    <!-- 加载动画 -->
+    <div class="loaderBox"><div class="loader">Load</div></div>
+    <div class="focus">
+        <div class="focusBox">
+            <img src="../images/focus.jpg" alt="">
+            <p>长按扫描二维码关注公众号</p>
+            <span class="hideFocu">下次再关注</span>
+        </div>
+    </div>
+
+    <div class="logoBox">
+        <img src="../images/01-logo.png"/>
+    </div>
+
+    <div class="scanBox">
+        <p>点击扫一扫</p>
+        <p calss="code"></p>
+        <img class="scan" src="../images/01-qr.png"/>
+        <a class="rules">了解规则>></a>
+    </div>
+
+    <ul class="ruleBox">
+        <li>
+            <h6>
+                1. <span>获取真品码</span>
+            </h6>
+            <p>寻找所购买商品内包装的防伪标签，获取正品查询码。</p>
+        </li>
+        <li>
+            <h6>
+                2. <span>查询结果</span>
+            </h6>
+            <p>通过微信扫一扫二维码进行查询验证。</p>
+        </li>
+        <li>
+            <h6>
+                3. <span>获得结果</span>
+            </h6>
+            <p>结果一：该正品查询码为第N次验证，为正品。</p>
+            <p>结果二：该正品查询码暂时无法查询，请咨询客服。</p>
+        </li>
+    </ul>
+
+    <form class='form'>
+        <ul class="formBox">
+            <li>手机验证码</li>
+            <li><input class="name" type="text" placeholder="请填写姓名" /></li>
+            <li class="checkPhone">
+                <input class="phone" type="number" onkeyup="checkPhone()" placeholder="请输入手机号码" />
+                <button class="getnum">获取验证码</button></li>
+            <li class="checkPhone"><input class="verify" type="text"  placeholder="请输入验证码" />
+            </li>
+            <li><span class="submit">提交</span></li>
+        </ul>
+    </form>
+
+    <script src="../script/lib/zepto.js"></script>
+    <script src="../script/lib/wx.js"></script>
+    <script src="../script/lib/common.js"></script>
+    <script src="../script/scan.js"></script>
+</body>
+</html>

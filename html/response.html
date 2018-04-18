@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>评价反馈</title>
+  <link rel="stylesheet" href="../css/min/response.min.css">
+  <script src="../script/lib/zepto.js"></script>
+  <script src="../script/lib/properScreen_css.js"></script>
+  <script src="../script/lib/properScreen.js"></script>
+  <script src="../script/lib/wx.js"></script>
+  <script src="../script/lib/common.js"></script>
+</head>
+<body>
+  <div class="response">
+    <div class="contain">
+      
+      <div class="logo">
+        <div class="logoBox">
+          <img src="../images/01-logo.png" alt="logo">
+        </div>
+      </div>
+
+      <div class="title">
+        <img src="../images/05-feedback.png" alt="book">
+        <h1>评价反馈</h1>
+      </div>
+      
+      <div class="phone">
+        <label for="phone">手机号</label><input id="phone" type="tel" maxlength="11" value="">
+      </div>
+
+      <form id="myForm" enctype="multipart/form-data">
+        <textarea name="backText" id="typeInput" placeholder="宝贝满足您的期待吗?"></textarea>
+
+        <div class="inputArea">
+          <ul class="imgList">
+
+            <li class="active">
+              <label for="choseFile"></label>
+              <input type="file" name="choseFile" id="choseFile" multiple="multiple">
+            </li>
+
+          </ul>
+          <div class="voice">
+            <img src="../images/05-record.png" alt="">
+          </div>
+        </div>
+
+        <div class="voiceCover">
+          <span></span>
+          <div class="voiceRecord">
+            <div class="left play">播放</div>
+            <div class="mid">
+              <canvas id="circle"></canvas>
+            </div>
+            <div class="right stop">暂停</div>
+          </div>
+        </div>
+      </form>
+
+      <div class="starCon">
+        <div class="starLs">
+          <p class="check1">销售服务态度</p>
+          <div class="star">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="starLs">
+          <p class="check2">安装服务态度</p>
+          <div class="star">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="starLs">
+          <p class="check3">产品质量评价</p>
+          <div class="star">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="starLs">
+          <p class="check4">整体满意度为</p>
+          <div class="star">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- <div class="stableLs">
+        <ul>
+          <li>床套、床垫、床头柜有气味</li>
+          <li>套床有声响</li>
+          <li>床垫发霉</li>
+          <li>排骨架声响</li>
+          <li>床垫塌陷</li>
+          <li>乳胶的保养</li>
+          <li>床垫塌陷</li>
+          <li>床垫塌陷</li>
+          <li class="active">其他类</li>
+        </ul>
+      </div> -->
+
+      <div class="submit">
+        <p>提 交</p>
+      </div>
+
+      <div class="footer">
+        <img src="../images/03-phone.png" alt="f-phone">
+        <span>客服热线：</span>
+        <i>400-777-0077</i>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cover">
+    <div class="dialog">
+      <div class="word">
+        <img src="../images/ok.png" alt="ok">
+        <p>您的反馈已提交，请等待客服回访</p>
+      </div>
+      <div class="btn">
+        <p>好 的</p>
+      </div>
+    </div>
+  </div>
+  <script src="../script/min/response.js"></script>
+</body>
+</html>

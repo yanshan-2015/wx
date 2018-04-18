@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>消费者客服系统</title>
+</head>
+<body class="indexBody">
+  <script src="script/lib/zepto.js"></script>
+  <script src="script/lib/common.js"></script>
+  <script>
+    var state = getQueryString('state');
+    var barCode = getQueryString('barCode');
+    location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='+appid+'&redirect_uri=http://derucci.net/service/html/scan.html&response_type=code&scope=snsapi_base&state='+barCode+'~'+state+'#wechat_redirect'
+    // location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx879c920191311570&redirect_uri=http://www.derucci.com/service/html/scan.html&response_type=code&scope=snsapi_userinfo&state=6EE60F40-144C-4100-A7C3-39AE8D980E48#wechat_redirect'
+  </script>
+</body>
+</html>
