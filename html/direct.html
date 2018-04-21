@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <title>直接评价</title>
   <link rel="stylesheet" href="../css/direct.css">
-  <script src="../script/lib/zepto.js"></script>
+  <script src="../script/lib/jquery-2.2.1.min.js"></script>
   <script src="../script/lib/properScreen_css.js"></script>
   <script src="../script/lib/properScreen.js"></script>
   <script src="../script/lib/wx.js"></script>
 </head>
 <body>
+
   <div class="direct">
     <div class="contain">
 
@@ -33,32 +34,16 @@
       </div>
 
       <form id="myForm" enctype="multipart/form-data">
+
         <textarea name="backText" id="typeInput" placeholder="宝贝满足您的期待吗?"></textarea>
 
-        <div class="inputArea">
-          <ul class="imgList">
+        <ul class="imgList">
+          <li class="active">
+            <label for="choseFile"></label>
+            <input type="file" name="head_url" id="choseFile" multiple>
+          </li>
+        </ul>
 
-            <li class="active">
-              <label for="choseFile"></label>
-              <input type="file" name="head_url" id="choseFile" multiple>
-            </li>
-
-          </ul>
-          <div class="voice">
-            <img src="../images/05-record.png" alt="">
-          </div>
-        </div>
-
-        <!--<div class="voiceCover">
-          <span></span>
-          <div class="voiceRecord">
-            <div class="left play">播放</div>
-            <div class="mid">
-              <canvas id="circle"></canvas>
-            </div>
-            <div class="right stop">暂停</div>
-          </div>
-        </div>-->
       </form>
 
       <div class="starCon">
@@ -132,6 +117,10 @@
     </div>
   </div>
 
-  <script src="../script/min/direct.js"></script>
+  <div class="loaderBox">
+    <div class="loader">Load</div>
+  </div>
+
+  <script src="../script/min/directs.js"></script>
 </body>
 </html>

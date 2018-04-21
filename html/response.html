@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>评价反馈</title>
-  <link rel="stylesheet" href="../css/min/response.min.css">
-  <script src="../script/lib/zepto.js"></script>
+  <link rel="stylesheet" href="../css/response.css">
+  <script src="../script/lib/jquery-2.2.1.min.js"></script>
   <script src="../script/lib/properScreen_css.js"></script>
   <script src="../script/lib/properScreen.js"></script>
   <script src="../script/lib/wx.js"></script>
@@ -26,7 +26,10 @@
       </div>
       
       <div class="phone">
-        <label for="phone">手机号</label><input id="phone" type="tel" maxlength="11" value="">
+        <label for="phone">手机号</label>
+        <input id="phone" type="tel" maxlength="11" readonly>
+        <label for="name" class="name">姓 名</label>
+        <input id="name" type="text" readonly>
       </div>
 
       <form id="myForm" enctype="multipart/form-data">
@@ -41,20 +44,6 @@
             </li>
 
           </ul>
-          <div class="voice">
-            <img src="../images/05-record.png" alt="">
-          </div>
-        </div>
-
-        <div class="voiceCover">
-          <span></span>
-          <div class="voiceRecord">
-            <div class="left play">播放</div>
-            <div class="mid">
-              <canvas id="circle"></canvas>
-            </div>
-            <div class="right stop">暂停</div>
-          </div>
         </div>
       </form>
 
@@ -104,20 +93,6 @@
         </div>
       </div>
       
-      <!-- <div class="stableLs">
-        <ul>
-          <li>床套、床垫、床头柜有气味</li>
-          <li>套床有声响</li>
-          <li>床垫发霉</li>
-          <li>排骨架声响</li>
-          <li>床垫塌陷</li>
-          <li>乳胶的保养</li>
-          <li>床垫塌陷</li>
-          <li>床垫塌陷</li>
-          <li class="active">其他类</li>
-        </ul>
-      </div> -->
-
       <div class="submit">
         <p>提 交</p>
       </div>
@@ -142,6 +117,12 @@
       </div>
     </div>
   </div>
+
+  <div class="loaderBox">
+    <div class="loader">Load</div>
+  </div>
+
+
   <script src="../script/min/response.js"></script>
 </body>
 </html>
