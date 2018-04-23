@@ -34,14 +34,13 @@ $(function () {
 
   //提交处理
   $('.submit').click(function () {
-    $('.loaderBox').fadeIn(150);
     var textVal  = $('#typeInput').val();
 
     if(Arr.length !== 4){
       alert('星级评价未完成！');
       return false
     }
-
+    $('.loaderBox').fadeIn(150);
     //上传数据
     var formData = new FormData($('#myForm')[0]);
     formData.append('barCode',barCode);
@@ -67,13 +66,13 @@ $(function () {
           setTimeout(function () {
             $('.cover').fadeIn(100);
           },150);
-
         }else {
           alert('提交失败, 请重新测试')
         }
       },
       error: function () {
         alert('提交失败，请重试');
+        $('.loaderBox').fadeOut(150);
       }
     })
   });

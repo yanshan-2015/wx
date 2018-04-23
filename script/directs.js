@@ -88,6 +88,7 @@ $(function () {
       },
       error: function () {
         alert('提交失败，请重试');
+        $('.loaderBox').fadeOut(150);
       }
     })
   });
@@ -101,7 +102,9 @@ $(function () {
 
 //预览处理
 var PreView = function () {
+  var ArrImg = [];
   $('#choseFile').change(function (e) {
+
     var files = e.target.files;
     console.log(files);
     var imageType = /^image\//;
